@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "PyChanLun"
+version = "0.1.2"
+description = "Applying the Chan Theory (Chan Lun) to analyze stock trading information."
+readme = "README.md"
+license = {file = "LICENSE"}
+authors = [
+    { name = "chanchanapp", email = "chanchanapp@outlook.com" }
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+]
+requires-python = ">=3.12"
+dependencies = [
+    "yfinance",
+    "numpy",
+    "pandas"
+]
+
+[project.urls]
+Homepage = "https://github.com/chanchanapp/pychanlun"
+Repository = "https://github.com/chanchanapp/pychanlun"
+"Bug Tracker" = "https://github.com/chanchanapp/pychanlun/issues"
+
+[tool.setuptools]
+packages = [
+    "pychanlun"
+]
